@@ -1,0 +1,6 @@
+for i in parse-only/basic/*.src ; do
+ 	j=`echo $i | awk -F/ '{ print $3}'| awk -F. '{print $1}'` 
+	php8.1 parse.php <$i >outputs/my_$j.out
+	diff -E -w --suppress-common-lines parse-only/basic/. outputs/my_read_test.out 
+ 
+	done

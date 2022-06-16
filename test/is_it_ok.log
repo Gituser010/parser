@@ -1,0 +1,7 @@
+Archive:  xpentr00.zip
+  inflating: parse.php               
+  inflating: parse.pdf               
+  inflating: readme0.pdf             
+  inflating: readme1.pdf             
+Script (parse.php in langueage PHP 8.1) load source code in IPP-code from stdin 
+check lexikal and syntax of code and output XML representation of program.
